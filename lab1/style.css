@@ -1,0 +1,102 @@
+.kerry_body{
+    align-items: center;
+    justify-content: center;
+}
+
+.kerry_body hr {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.kerry_body div{
+    display: block;
+}
+.kerry_box1{
+    height: 1000px;
+    width: 1400px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 25px;
+    display: block;
+    background-color: darkkhaki;
+    border: 3px solid black;
+    
+    justify-content: center;
+}
+
+.kerry_left-box{
+    float:left;
+    width: 25%;
+    height: 100%;
+    background-color: azure;
+}
+
+.kerry_left-box p{
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: larger;
+}
+
+.kerry_left-box img {
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 10px;
+    width: 50%;
+    border-radius: 100%;
+    height: 25%;
+}
+
+.kerry_left-box h2{
+    text-align: center;
+}
+
+.kerry_right-box{
+    display: block;
+}
+
+.kerry_right-box h2{
+    margin-left: 300px;
+}
+
+.kerry_rightdown-box{
+    margin-top: 110px;
+}
+
+.kerry_program{
+    display: block;
+    float: left;
+    width: 25%;
+    font-size: larger;
+
+}
+
+.kerry_design{
+    float:left;
+    width:30%;
+    font-size: larger;
+
+}
+
+.left-box a{   
+    font-size: larger;
+
+}
+
+.kerry_intro{
+    margin-left: 460px;
+    margin-right: 90px;
+}
+
+.kerry_intro p{
+    font-size:5rex;
+}
+
+.kerry_rightdown-box li{
+    font-size: larger;
+    margin-left: 50px;
+}
