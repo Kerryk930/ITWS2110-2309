@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Info based on Map Location</title>
+    <style>
+        /* 设置地图的大小 */
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBap6hHqVZtXGgmTgYXdUcYMtvucDmH7nY&callback=initMap"
+            async defer></script>
+    <script>
+        let map;
+        let marker;
+
+        function initMap() {
+            // 初始地图设置
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -34.397, lng: 150.644},
+                zoom: 8
+            });
+
+            // 添加点击事件监听器
+            map.addListener('click', function (e) {
+                placeMarkerAndPanTo(e.latLng, map);
+                fetchWeatherData(e.latLng.lat(), e.latLng.lng());
+            });
+        }
+
+        // 放置标记并移动到该位置
+        function placeMarkerAndPanTo(latLng, map) {
+            if (marker) {
+                marker.setMap(null); // 移除当前标记
+            }
+            marker = new google.maps.Marker({
+                position: latLng,
+                map: map
+            });
+            map.panTo(latLng);
+        }
+
+        function fetchWeatherData(lat, lng) {
+            const weatherApiUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&APPID=ff32ef96e13a598c8668c6353b80e1e3`;
+            fetch(weatherApiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    // 更新HTML内容显示天气数据
+                    document.getElementById('weather-data').textContent = JSON.stringify(data, null, 2);
+                })
+                .catch(error => {
+                    console.error("API请求失败：", error);
+                });
+        }
+    </script>
+</head>
+<body>
+<div id="map"></div>
+<div id="weather-data">
+    <!-- 天气数据将显示在这里 -->
+</div>
+</body>
+</html>

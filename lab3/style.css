@@ -1,0 +1,46 @@
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    font-family: Arial, sans-serif;
+
+}
+
+.body hr {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.body div{
+    display: block;
+}
+.box1{
+    height: 600px;
+    width: 1400px;
+    display: block;
+    background-color: rgb(207, 207, 207);
+    border: 3px solid black;
+    
+}
+
+.left_box{
+    width: 70%;
+    float: left;
+}
+
+.right_box{
+    margin-left: 20px;
+    height: 100%;
+    float: left;
+}
+
+
+#map {
+    height: 600px;
+    width: 100%;
+}

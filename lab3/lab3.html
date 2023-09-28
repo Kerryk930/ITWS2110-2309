@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <head>
+        <title>Lab3</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css">
+        <script src="js/map.js"></script>
+        <title>Page Title</title>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBap6hHqVZtXGgmTgYXdUcYMtvucDmH7nY&libraries=places&callback=initMap" async defer></script>
+
+
+    </head>
+    <body class="body">
+        <div class="box1">
+            <div class="left_box">
+                <div id="map"></div>
+            </div>
+            <div class="right_box">
+                <div id="weather-data"></div>
+                <div id="weather"></div>
+                <br>
+                <input id="address" type="text" placeholder="Enter location">
+                <button onclick="geoCodeAddress()">LET'S GO!!!</button>
+                
+            </div>
+        </div>
+        
+
+        </div>
+    </body>

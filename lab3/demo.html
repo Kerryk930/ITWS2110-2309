@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伦敦天气信息</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #weather-data {
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBap6hHqVZtXGgmTgYXdUcYMtvucDmH7nY&libraries=places&callback=initMap" async defer></script>
+
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude + 
+            "<br>Longitude: " + position.coords.longitude;
+        }
+
+        window.onload = getLocation;
+    </script>
+    <div id="weather-data">
+    </div>
+    <div id="location-input">
+        <input id="address" type="text" placeholder="输入地址">
+        <button onclick="geoCodeAddress()">查找</button>
+    </div>
+    <div id="map"></div>
+    <script>
+        var x = document.getElementById("demo");
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+        
+        function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude +
+          "<br>Longitude: " + position.coords.longitude;
+        }
+        </script>
+    <script>
+        let map;
+
+        function initMap() {
+            const mapOptions = {
+                center: { lat: 51.5074, lng: -0.1278 },
+                zoom: 10,
+            };
+            map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            const input = document.getElementById('address');
+            const autocomplete = new google.maps.places.Autocomplete(input);
+        }
+
+        function geoCodeAddress() {
+            const address = document.getElementById("address").value;
+            fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=AIzaSyBap6hHqVZtXGgmTgYXdUcYMtvucDmH7nY`)
+                .then(response => response.json())
+                .then(data => {
+                    const location = data.results[0].geometry.location;
+                    map.setCenter(new google.maps.LatLng(location.lat, location.lng));
+                })
+                .catch(error => {
+                    console.error("Geocoding 请求失败：", error);
+                });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBap6hHqVZtXGgmTgYXdUcYMtvucDmH7nY&callback=initMap&v=weekly" defer></script>
+
+    <script>
+        const apiUrl = "http://api.openweathermap.org/data/2.5/weather?q=London,UK&APPID=ff32ef96e13a598c8668c6353b80e1e3"
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                const city = data.name;
+                const description = data.weather[0].description;
+                const temp = (data.main.temp - 273.15).toFixed(2);
+                const humidity = data.main.humidity;
+                const windSpeed = data.wind.speed;
+                const icon = data.weather[0].icon;
+
+                const weatherDiv = document.getElementById("weather-data");
+                weatherDiv.innerHTML = `
+                    <h2>天气信息: ${city}</h2>
+                    <p><b>天气描述:</b> ${description}</p>
+                    <img src="http://openweathermap.org/img/wn/${icon}.png" alt="天气图标" />
+                    <p><b>温度:</b> ${temp}°C</p>
+                    <p><b>湿度:</b> ${humidity}%</p>
+                    <p><b>风速:</b> ${windSpeed} 米/秒</p>
+                `;
+            })
+            .catch(error => {
+                console.error("API请求失败：", error);
+            });
+    </script>
+</body>
+</html>
