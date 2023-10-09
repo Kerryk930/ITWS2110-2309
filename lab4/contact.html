@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact ITWS Department</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Common styles for your entire page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        /* Styles for sections (container) */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styles for headings */
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #0073e6;
+        }
+
+        /* Styles for paragraphs */
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #0073e6;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .info-box {
+            background-color: #2E3D48; /* Slate */
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #2E3D48; /* Slate */
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+
+        .submit-button {
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #014b95; /* Darker Blue */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Rensselaer Polytechnic Institute Logo">
+        <h1>ITWS Department</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="faculty.html">Faculty</a>
+            <a href="news.html">News</a>
+            <a href="programs.html">Programs</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Contact Advisors</h2>
+        <div class="contact-info">
+            <div class="info-box">
+                <strong>Meaghan Potter, Undergraduate Advisor</strong><br>
+                Email: <a href="mailto:molinm2@rpi.edu">molinm2@rpi.edu</a><br>
+                Address:<br>
+                Rensselaer Polytechnic Institute<br>
+                Lally 2nd Floor<br>
+                110 8th Street<br>
+                Troy, NY 12180
+            </div>
+            <div class="info-box">
+                <strong>Jeanne Luker, Graduate Advisor</strong><br>
+                Email: <a href="mailto:lukerj2@rpi.edu">lukerj2@rpi.edu</a><br>
+                Address:<br>
+                Rensselaer Polytechnic Institute<br>
+                Lally 2nd Floor<br>
+                110 8th Street<br>
+                Troy, NY 12180
+            </div>
+        </div>
+        
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <img src="logo.png" alt="Rensselaer Polytechnic Institute Logo">
+        <p>DETAILED CONTACT INFORMATION</p>
+        <p>Rensselaer Polytechnic Institute</p>
+        <p>110 Eighth Street | Troy, NY USA 12180</p>
+        <p>(518) 276-6000</p>
+        <p><a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>

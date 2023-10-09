@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Page</title>
+    <style>
+        body, h1, h2, ul, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 20px;
+        }
+
+        .main-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #444;
+        }
+
+        .faculty-member {
+            margin-bottom: 20px;
+        }
+
+        .full-profile {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #e1f5fe;
+            padding: 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        .full-profile:hover {
+            background-color: #b3e5fc;
+        }
+
+        .sidebar {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .sidebar h2, .sidebar h3 {
+            color: #444;
+        }
+
+        .sidebar p, .sidebar li {
+            color: #666;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar a {
+            color: #0066cc;
+        }
+        .faculty-image {
+        width: 100%; /* Make image take the full width of its container */
+        max-width: 200px; /* Maximum width of the image */
+        height: auto; /* Maintain the aspect ratio */
+        border-radius: 5px; /* Optional: for rounded corners */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: for shadow effect */
+        margin-top: 10px; /* Space between the image and the profile link */
+    }
+
+        .detailed-contact {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e1f5fe;
+            border-radius: 3px;
+            color: #0066cc;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .detailed-contact:hover {
+            background-color: #b3e5fc;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Style the contact information */
+        footer p {
+            margin-bottom: 5px;
+        }
+        header {
+    background-color: red; /* Changed from darkblue to red */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+footer img {
+    text-align: left;
+    max-width: 100px; /* Adjust the max-width as needed */
+    height: auto;
+    margin-right: 20px; /* Add space between the logo and text */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+h1{
+    color: #fff;
+}
+header nav a{
+    color: white;
+}
+
+header nav a:hover {
+    color: black;
+}
+
+    </style>
+</head>
+<header>
+    <img src="logo.png" alt="Rensselaer Polytechnic Institute Logo">
+    <h1>ITWS Department</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="news.html">News</a>
+        <a href="programs.html">Programs</a>
+    </nav>
+</header>
+<body>
+
+    <div class="container">
+
+        <div class="main-content">
+            <h1>Faculty</h1>
+
+            <!-- Main Faculty -->
+            <div class="faculty-member">
+                <h2>Brian Callahan</h2>
+                <p>Lecturer And Graduate Program Director</p>
+                <img src="p1.png" alt="Brian Callahan" class="faculty-image">
+    <a href="#" class="full-profile">FULL PROFILE</a>
+            </div>
+
+            <div class="faculty-member">
+                <h2>Kevin Stewart</h2>
+                <p>Lecturer</p>
+                <img src="p2.png" alt="Brian Callahan" class="faculty-image">
+    <a href="#" class="full-profile">FULL PROFILE</a>
+            </div>
+
+            <!-- Affiliated Faculty -->
+            <div class="affiliated">
+                <h1>Affiliated Faculty</h1>
+
+                
+<div class="faculty-member">
+    <h2>Curt Breneman</h2>
+    <p>Dean Of The School Of Science, Professor And Director, Rensselaer Exploratory Center For Cheminformatics Research (RECCR)</p>
+    <img src="p3.png" alt="Brian Callahan" class="faculty-image">
+    <a href="#" class="full-profile">FULL PROFILE</a>
+</div>
+
+<div class="faculty-member">
+    <h2>Kenneth Connor</h2>
+    <p>Professor Emeritus</p>
+    <img src="p4.png" alt="Brian Callahan" class="faculty-image">
+    <a href="#" class="full-profile">FULL PROFILE</a>
+</div>
+<div class="faculty-member">
+    <h2>Kenneth Connor</h2>
+    <p>Professor Emeritus</p>
+    <img src="p5.png" alt="Brian Callahan" class="faculty-image">
+    <a href="#" class="full-profile">FULL PROFILE</a>
+</div>
+
+<div class="faculty-member">
+    <h2>Faye Duchin</h2>
+    <p>Professor Emeritus</p>
+    <img src="p2.png" alt="Brian Callahan" class="faculty-image">
+    <a href="#" class="full-profile">FULL PROFILE</a>
+</div>
+
+<div class="faculty-member">
+    <h2>Michael Hanna</h2>
+    <p>Associate Dean, Undergraduate Education</p>
+    <img src="p3.png" alt="Brian Callahan" class="faculty-image">
+    <a href="#" class="full-profile">FULL PROFILE</a>
+</div>
+
+
+
+
+
+
+            </div> <!-- End of affiliated -->
+        </div> <!-- End of main-content -->
+
+        <div class="sidebar">
+            <h2>CONTACT INFORMATION</h2>
+            <p>Information Technology and Web Science</p>
+            <p>Rensselaer Polytechnic Institute</p>
+            <p>Lally 2nd Floor</p>
+            <p>110 8th Street</p>
+            <p>Troy, NY 12180</p>
+
+            <h3>Undergraduate Advisor</h3>
+            <p>Schedule an appointment or email Meaghan Potter:</p>
+            <ul>
+                <li><a href="#">In-Person</a></li>
+                <li><a href="#">Virtual</a></li>
+            </ul>
+            <p>Email: <a href="mailto:molinm2@rpi.edu">molinm2@rpi.edu</a></p>
+
+            <h3>Graduate Advisor</h3>
+            <p>Schedule an appointment or email Jeanne Luker:</p>
+            <ul>
+                <li><a href="#">In-Person</a></li>
+                <li><a href="#">Virtual</a></li>
+            </ul>
+            <p>Email: <a href="mailto:lukerj2@rpi.edu">lukerj2@rpi.edu</a></p>
+
+            <a href="#" class="detailed-contact">DETAILED CONTACT INFORMATION</a>
+        </div> <!-- End of sidebar -->
+    </div> <!-- End of container -->
+
+    <footer>
+        <img src="logo.png" alt="Rensselaer Polytechnic Institute Logo">
+        <p>DETAILED CONTACT INFORMATION</p>
+        <p>Rensselaer Polytechnic Institute</p>
+        <p>110 Eighth Street | Troy, NY USA 12180</p>
+        <p>(518) 276-6000</p>
+        <p><a href="contact.html">Contact Us</a></p>
+    </footer>
+    
+</body>
+
+</html>
+
+

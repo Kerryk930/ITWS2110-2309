@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page</title>
+    <style>
+        body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.main-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #444;
+}
+
+.faculty-member, .news-item {
+    margin-bottom: 20px;
+}
+
+.full-profile {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #e1f5fe;
+    padding: 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.full-profile:hover {
+    background-color: #b3e5fc;
+}
+
+.read-more {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sidebar h2, .sidebar h3 {
+    color: #444;
+}
+
+.sidebar p, .sidebar li {
+    color: #666;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.detailed-contact {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e1f5fe;
+    border-radius: 3px;
+    color: #0066cc;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.detailed-contact:hover {
+    background-color: #b3e5fc;
+}
+footer img {
+    text-align: left;
+    max-width: 100px; /* Adjust the max-width as needed */
+    height: auto;
+    margin-right: 20px; /* Add space between the logo and text */
+}
+footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Style the contact information */
+        footer p {
+            margin-bottom: 5px;
+        }
+        header {
+    background-color: red; /* Changed from darkblue to red */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+header nav a{
+    color: white;
+}
+
+header nav a:hover {
+    color: black;
+}
+h1{
+    color: #fff;
+}
+
+/* For images */
+.faculty-member img, .news-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 10px;
+}
+
+        .news-item {
+            margin-bottom: 30px;
+        }
+        
+        .read-more {
+            color: #0066cc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<header>
+    <img src="logo.png" alt="Rensselaer Polytechnic Institute Logo">
+    <h1>ITWS Department</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="news.html">News</a>
+        <a href="programs.html">Programs</a>
+    </nav>
+</header>
+
+<body>
+
+    <div class="container">
+
+        <div class="main-content">
+            <h1>News</h1>
+
+            <!-- News Items -->
+            <div class="news-item">
+                <h2>Rensselaer Polytechnic Institute Plans to Deploy First IBM Quantum System One on a University Campus</h2>
+                <p>Today, it was announced that Rensselaer Polytechnic Institute will become the first university in the world to house an IBM Quantum System One. The IBM quantum computer, intended to be operational by January of 2024, will serve as the foundation of a new IBM Quantum Computational Center in partnership with RPI. ... <a href="#" class="read-more">read more</a></p>
+            </div>
+
+            <div class="news-item">
+                <h2>Rensselaer Graduates Recognized for Resilience, Perseverance at 217th Commencement</h2>
+                <p>Rensselaer Polytechnic Institute President Martin A. Schmidt ’81 presided over the 217th Commencement Ceremony, his first as president. During the ceremony, Rensselaer awarded a total of 1,988 degrees... <a href="#" class="read-more">read more</a></p>
+            </div>
+
+            <div class="news-item">
+                <h2>More Than 1,900 Degrees To Be Awarded at 217th Rensselaer Polytechnic Institute Commencement Ceremony</h2>
+                <p>Beginning at 9:30 a.m. on May 20, 2023, Rensselaer Polytechnic Institute will award a total of 1,988 degrees to 1,957 students, some of whom have earned multiple degrees. Approximately 1,500 students will attend the ceremony. ... <a href="#" class="read-more">read more</a></p>
+            </div>
+
+            <div class="news-item">
+                <h2>RPI To Celebrate Cultural Diversity of Student Graduates</h2>
+                <p>With graduation season in full swing, RPI is hosting the Lavender Graduation and Garnet D. Baltimore Students of Color Graduation ceremonies to celebrate the cultural diversity of the Class of 2023 graduates. ... <a href="#" class="read-more">read more</a></p>
+            </div>
+
+            <div class="news-item">
+                <h2>NYC Mayor Eric Adams Joined Top Biomedical Researchers To Usher in the Center for Engineering and Precision Medicine at Hudson Research Center at 619 West 54th Street</h2>
+                <p>The grand opening of the Center for Engineering and Precision Medicine (CEPM), a partnership between RPI and the Icahn School of Medicine at Mount Sinai, was held March 29, 2023 at the Hudson Research Center. ... <a href="#" class="read-more">read more</a></p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <!-- Your sidebar content -->
+            <h2>CONTACT INFORMATION</h2>
+            <p>Information Technology and Web Science</p>
+            <p>Rensselaer Polytechnic Institute</p>
+            <p>Lally 2nd Floor</p>
+            <p>110 8th Street</p>
+            <p>Troy, NY 12180</p>
+
+            <h3>Undergraduate Advisor</h3>
+            <p>Schedule an appointment or email Meaghan Potter:</p>
+            <ul>
+                <li><a href="#">In-Person</a></li>
+                <li><a href="#">Virtual</a></li>
+            </ul>
+            <p>Email: <a href="mailto:molinm2@rpi.edu">molinm2@rpi.edu</a></p>
+
+            <h3>Graduate Advisor</h3>
+            <p>Schedule an appointment or email Jeanne Luker:</p>
+            <ul>
+                <li><a href="#">In-Person</a></li>
+                <li><a href="#">Virtual</a></li>
+            </ul>
+            <p>Email: <a href="mailto:lukerj2@rpi.edu">lukerj2@rpi.edu</a></p>
+
+            <a href="#" class="detailed-contact">DETAILED CONTACT INFORMATION</a>
+        </div>
+
+    </div>
+    <footer>
+        <img src="logo.png" alt="Rensselaer Polytechnic Institute Logo">
+        <p>DETAILED CONTACT INFORMATION</p>
+        <p>Rensselaer Polytechnic Institute</p>
+        <p>110 Eighth Street | Troy, NY USA 12180</p>
+        <p>(518) 276-6000</p>
+        <p><a href="contact.html">Contact Us</a></p>
+    </footer>
+
+</body>
+
+</html>
