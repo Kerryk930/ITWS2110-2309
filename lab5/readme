@@ -1,0 +1,13 @@
+Making separate files for CSS
+Making separate files for JS
+Css rule optimization
+In line 34, change a secret return to the previous page to be obvious
+Minify JS 
+Replace three <br\> by css
+Make fg style in css file
+
+I tried to use some loop to make javascript function be short, but it always have bug.
+
+Now, you can change background color!
+
+https://koirpi.eastus.cloudapp.azure.com/itws2110-2309/lab5.
