@@ -1,0 +1,97 @@
+{
+  "course": "Modern Binary Exploitation",
+  "content": {
+    "Lectures": [
+    {
+      "Title": "MBE Lecture 1zx",
+      "Description": "Intro",
+      "Link_to_Slideshow": [
+        "https://docs.google.com/presentation/d/1XPqoocF5CX0g2PPVjINbblczLPBoVMQJCTbnVTOrbR4/edit#slide=id.g4474cfbc15_0_246"
+      ]
+    },
+    {
+      "Title": "MBE Lecture 2",
+      "Description": "Reverse Engineering",
+      "Link_to_Slideshow": [
+       "https://docs.google.com/presentation/d/1njsyW0uWA4TKp1B-8vtEOFuNxsBuhxmY4EEt_x5pi7o/edit"
+      ]
+    },
+    {
+      "Title": "MBE Lecture 3",
+      "Description": "Memory Corruption",
+      "Link_to_Slideshow": [
+      "https://docs.google.com/presentation/d/1avKXYm4CoxWyK93gxyJVcawbox8JUyIGs0wNNwHuhYg/edit"
+      ]
+      },
+    {
+      "Title": "MBE Lecture 4",
+      "Description": "Shellcoding",
+      "Link_to_Slideshow": [
+      "https://docs.google.com/presentation/d/1CbZQjUoGFJeID5Tc5j2Ez0IkhFf3Lanhw3WTiiNdGWI/edit#slide=id.gc8692888a_1_0"  
+      ]
+    },
+    {
+      "Title": "MBE Lecture 5",
+      "Description": "Stack Cookies",
+      "Link_to_Slideshow": [
+        "https://docs.google.com/presentation/d/1vaRbpP0jNr245BMAqjR_0IkAiSZVAM9LteR2Tu4mNLk/edit#slide=id.gc8692888a_1_0"
+      ]
+    },
+    {
+      "Title": "MBE Lecture 6",
+      "Description": "DEP and ROP",
+      "Link_to_Slideshow": [
+
+        "https://docs.google.com/presentation/d/1mFhnVrPVt8TiFcEFqCIXUGePWQis5k8ossX-A0uuz6E/edit"
+      ]
+    },
+    {
+      "Title": "MBE Lecture 7",
+      "Description": "ASLR",
+      "Link_to_Slideshow": [
+ 
+        "https://docs.google.com/presentation/d/1GkPEr_IYfMW4ISOLeVF0IGGyM5G8NQKqlwaCLKSAPGU/edit"
+      ]
+    },
+    {
+      "Title": "MBE Lecture 8",
+      "Description": "Advancced defenses",
+      "Link_to_Slideshow": [
+        "https://docs.google.com/presentation/d/1NNuxVy220xdbuaa7e7njF-GC4sRB5Z8QM6ZMKyzXZcg/edit#slide=id.p"
+      ]
+    },
+     {
+      "Title": "MBE Lecture 9",
+      "Description": "Heap Exploitation",
+      "Link_to_Slideshow": [
+      "https://docs.google.com/presentation/d/1m_Oc1GuOp20cttQ3l2r-jNTgU9xh9rzjZJLOS19ziHc/edit#slide=id.gc8692888a_1_0"
+      ]
+      },
+
+    {
+      "Title": "MBE Lecture 10",
+      "Description": "Misc. types of bugs",
+      "Link_to_Slideshow": [
+        "https://docs.google.com/presentation/d/1EXdzSb38NDFuq1YP3EPs2IThOu1LaPkAl_0sbEyB3S8/edit#slide=id.gc8692888a_1_0"
+      ]
+    },
+
+    {
+      "Title": "MBE Lecture 11",
+      "Description": "Race Conditions",
+      "Link_to_Slideshow": 
+      [
+        "https://docs.google.com/presentation/d/1WBlbRUvJLU7MTQU9udw0IBzq20c2Dh1A-9HLkwWREzI/edit#slide=id.gc8692888a_1_0"
+      ]
+      },
+
+    {
+      "Title": "MBE Lecture 12",
+      "Description": "Ethics",
+      "Link_to_Slideshow": [
+      "https://docs.google.com/presentation/d/14Yh80xlz3beZTT1Yt6D6eM5PIF9bO_rYyLWjnFJ7_Q0/edit#slide=id.p"
+      ]
+      }
+  
+    ]
+}}

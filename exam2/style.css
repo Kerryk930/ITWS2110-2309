@@ -1,0 +1,40 @@
+body{
+    margin-left: 300px;
+    width: 900px;
+    height: 1000px;
+}
+#content-navigation {
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+    color: blue;
+    border: 1px solid #d0d0d0;
+    display: block;
+    
+}
+#content-navigation li {
+    cursor: pointer;
+    padding: 5px;
+    height: 5%;
+    margin: 5px;
+    background-color: #f0f0f0;
+}
+#content-navigation li:hover {
+    background-color: #e0e0e0;
+}
+#preview-area {
+    height: 100%;
+    width: 60%;
+    display: block;
+    float: left;
+
+}
+.hidden {
+    display: none;
+}
+
+.block{
+    margin-left: 50px;
+}
